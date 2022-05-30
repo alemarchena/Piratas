@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Piratas</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=900 height=600 style="width: 900px; height: 600px; background: #303030"></canvas>
+    <script src="Build/be5c8a837410560f3ca8989808c21df4.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/b4ee1ef037cf06f83997bdd2d4c440f0.data",
+        frameworkUrl: "Build/d29168ebe707c504aad5108ff7abf71d.js",
+        codeUrl: "Build/e2c7a2847ecb92f639816a7a18ec3932.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Templay Studios",
+        productName: "Piratas",
+        productVersion: "1.4",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
